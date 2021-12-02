@@ -1,4 +1,4 @@
-input = open('./day1_input.txt').map(&:to_i)
+input = open('./day1.txt').map(&:to_i)
 puts 'part 1:', input.each_cons(2).select { |cons| cons[0] < cons[1] }.count
 
 previous_sum = 0

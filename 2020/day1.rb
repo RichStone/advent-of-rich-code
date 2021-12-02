@@ -1,4 +1,4 @@
-data = open('./day1_input.txt').map(&:to_i)
+data = open('./day1.txt').map(&:to_i)
 result = data.combination(2).select { |comb| comb.reduce(:+) == 2020 }.flatten.reduce(:*)
 puts "part 1: #{result}"
 
